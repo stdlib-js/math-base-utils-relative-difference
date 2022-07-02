@@ -83,7 +83,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.reldiff;
+})();
 })();
 </script>
 ```
@@ -236,6 +238,7 @@ var d = reldiff( 12.15, 12.149999999999999, scale );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var scales = [ 'max-abs', 'max', 'min-abs', 'min', 'mean-abs', 'mean', 'x', 'y' ];
 var x;
@@ -253,6 +256,7 @@ for ( i = 0; i < 100; i++ ) {
     }
 }
 
+})();
 })();
 </script>
 </body>
@@ -347,15 +351,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-utils-relative-difference/main/LICENSE
 
-[@stdlib/math/base/special/abs]: https://github.com/stdlib-js/math-base-special-abs/tree/umd
+[@stdlib/math/base/special/abs]: https://github.com/stdlib-js/math-base-special-abs/tree/umd/tree/umd
 
 [relative-difference]: https://en.wikipedia.org/wiki/Relative_change_and_difference
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/utils/absolute-difference]: https://github.com/stdlib-js/math-base-utils-absolute-difference/tree/umd
+[@stdlib/math/base/utils/absolute-difference]: https://github.com/stdlib-js/math-base-utils-absolute-difference/tree/umd/tree/umd
 
-[@stdlib/math/base/utils/float64-epsilon-difference]: https://github.com/stdlib-js/math-base-utils-float64-epsilon-difference/tree/umd
+[@stdlib/math/base/utils/float64-epsilon-difference]: https://github.com/stdlib-js/math-base-utils-float64-epsilon-difference/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
