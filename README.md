@@ -54,30 +54,14 @@ The choice of scale function depends on application context.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-utils-relative-difference
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var reldiff = require( '@stdlib/math-base-utils-relative-difference' );
+import reldiff from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@deno/mod.js';
 ```
 
 #### reldiff( x, y\[, scale] )
@@ -143,8 +127,8 @@ d = reldiff( 5.0, -2.0, 'y' ); // => |7/-2|
 To use a custom scale `function`, provide a `function` which accepts two numeric arguments `x` and `y`.
 
 ```javascript
-var abs = require( '@stdlib/math-base-special-abs' );
-var EPS = require( '@stdlib/constants-float64-eps' );
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@deno/mod.js';
+import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@deno/mod.js';
 
 function scale( x, y ) {
     var s;
@@ -221,8 +205,8 @@ var d = reldiff( 12.15, 12.149999999999999, scale );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var reldiff = require( '@stdlib/math-base-utils-relative-difference' );
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
+import reldiff from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@deno/mod.js';
 
 var scales = [ 'max-abs', 'max', 'min-abs', 'min', 'mean-abs', 'mean', 'x', 'y' ];
 var x;
@@ -269,7 +253,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -329,15 +313,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-utils-relative-difference/main/LICENSE
 
-[@stdlib/math/base/special/abs]: https://github.com/stdlib-js/math-base-special-abs
+[@stdlib/math/base/special/abs]: https://github.com/stdlib-js/math-base-special-abs/tree/deno
 
 [relative-difference]: https://en.wikipedia.org/wiki/Relative_change_and_difference
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/utils/absolute-difference]: https://github.com/stdlib-js/math-base-utils-absolute-difference
+[@stdlib/math/base/utils/absolute-difference]: https://github.com/stdlib-js/math-base-utils-absolute-difference/tree/deno
 
-[@stdlib/math/base/utils/float64-epsilon-difference]: https://github.com/stdlib-js/math-base-utils-float64-epsilon-difference
+[@stdlib/math/base/utils/float64-epsilon-difference]: https://github.com/stdlib-js/math-base-utils-float64-epsilon-difference/tree/deno
 
 <!-- </related-links> -->
 
