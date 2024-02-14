@@ -80,7 +80,7 @@ The choice of scale function depends on application context.
 ## Usage
 
 ```javascript
-import reldiff from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@esm/index.mjs';
+import reldiff from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@v0.2.0-esm/index.mjs';
 ```
 
 #### reldiff( x, y\[, scale] )
@@ -230,7 +230,7 @@ var d = reldiff( 12.15, 12.149999999999999, scale );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import reldiff from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@esm/index.mjs';
+import reldiff from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@v0.2.0-esm/index.mjs';
 
 var scales = [ 'max-abs', 'max', 'min-abs', 'min', 'mean-abs', 'mean', 'x', 'y' ];
 var x;
