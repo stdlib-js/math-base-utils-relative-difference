@@ -82,6 +82,11 @@ The choice of scale function depends on application context.
 To use in Observable,
 
 ```javascript
+reldiff = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-utils-relative-difference/tags). For example,
+
+```javascript
 reldiff = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@v0.2.1-umd/browser.js' )
 ```
 
@@ -94,7 +99,7 @@ var reldiff = require( 'path/to/vendor/umd/math-base-utils-relative-difference/i
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -252,7 +257,7 @@ var d = reldiff( 12.15, 12.149999999999999, scale );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-utils-relative-difference@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
